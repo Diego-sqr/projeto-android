@@ -1,0 +1,236 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+      font-family: 'Android';
+      src: url('./fontes/idroid.otf') format('opentype'); 
+    }
+
+    :root {
+      --cor0:#346082;
+      --cor1:#37454F;
+      --cor2:#152836;
+      --cor3:#5B7182;
+      --cor4:#5399CF;
+      --cor5:#E26848;
+      --fonte0: Arial, Helvetica, sans-serif;
+      --fonte1: 'Bebas Neue', cursive;
+      --fonte2: 'Android', sans-serif;
+    }
+
+    /** Variável Global que zera margin e padding de todo conteúdo html, ou seja, todas as medidas são zeradas da página web.
+    * {
+      margin: 0px;
+      padding: 0px;
+    } **/
+
+    body {
+      font-family: var(--fonte0);
+      color: var(--cor2);
+      background-color: var(--cor4);
+      margin: 0px;
+    }
+
+  /** colocando o simbolo de links, em todos os links externos do conteúdo **/
+    
+      a.external::after {
+      content: '\00A0\1F517'
+      
+    }
+
+    .external {
+      text-decoration: none;
+      color: var(--cor0);
+      font-weight: bold;
+    }
+
+    .external:hover {
+      text-decoration: underline;
+      color:#152836;
+    } 
+
+    header {
+      background-color: var(--cor0);
+      min-height: 150px;
+      padding-top: 40px;
+      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.247);
+      background-image: linear-gradient(to bottom, var(--cor0), rgba(14, 13, 13, 0.5));
+    }
+
+    header > h1{
+      font-family: var(--fonte1);
+      font-size: 40px;
+      text-align: center;
+      color: white;
+      margin: 0px;
+
+    }
+
+    header > p {
+      text-align: center;
+      color: white;
+
+    }
+
+    nav {
+      padding: 10px
+    }
+
+    nav > a{
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      margin-right: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      transition-duration: .5s;
+    }
+
+    nav > a:hover {
+      background-color: var(--cor0);
+      
+    }
+
+    main {
+      min-width: 400px;
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    main p {
+      margin: 15px, 0px;
+      text-align: justify;
+      text-indent: 30px;
+      font-size: 1em;
+      line-height: 2em;
+    }
+
+    main img {
+      width: 100%;
+    }
+
+    main strong {
+      color: var(--cor0);
+      font-weight: bold;
+    }
+
+    article#conteudo1 {
+      background-color: white;
+      text-align: justify;
+      text-indent: 20px;
+      margin: 0px auto 0px auto;
+      padding: 20px; 
+      border-radius: 0px 0px 10px 10px;
+      
+
+    }
+
+    article > h1 {
+      font-family: var(--fonte2);
+      background-color:hsla(206, 56%, 57%, 0.089);
+      
+      margin: 0;
+    }
+
+    article > .imagem {
+      margin: auto;
+      display: block;
+      max-width: 350px;
+    }
+
+    div.video {
+      position: relative;
+      background-color: white;
+      height: 0px;
+      margin-left: -20px;
+      margin-right: -20px;
+      margin-bottom: 15px;
+      padding-bottom: 59%;
+
+    }
+
+    div.video >iframe {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      width: 90%;
+      height: 90%;
+    }
+
+    aside {
+      background-color: #5399cf7e;
+      border-radius: 10px;
+      padding-bottom: 20px;
+      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.280);
+    }
+
+    aside > p {
+      text-align: justify;
+      text-indent: 15px;
+      line-height: 1.5em;
+      padding: 10px;
+      margin: 10px;
+
+    }
+
+    aside > h4 {
+      background-color: var(--cor0);
+      color: white;
+      text-align: left;
+      border-radius: 10px 10px 0px 0px; 
+      padding: 10px;
+      
+      /** crescendo a margem para fora
+      margin: -3px -22px 2px -2px;
+     **/
+
+    }
+
+
+    aside > ul {
+      list-style-type: '\2714\0020\0020';
+      columns: 2;
+      list-style-position: inside;
+      padding-left: 0px;
+    }
+
+
+    li > a {
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--cor0);
+    }
+
+    li > a:hover {
+      text-decoration: underline;
+      color:var(--cor2);
+    }
+
+    footer {
+      background-color: var(--cor0);
+      text-align: center;
+      color: white;
+      margin-top: 10px;
+      padding: 1px;
+
+    }
+
+    footer a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+      color: var(--cor2);
+
+    }
+    .subtitulo {
+      font-family: var(--fonte2);
+      background-image: linear-gradient(to right, var(--cor4), transparent);
+    }
